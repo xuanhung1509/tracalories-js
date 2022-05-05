@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "name": "Steak",
+      "calories": 800,
+      "id": 1
+    },
+    {
+      "name": "Chicken",
+      "calories": 700,
+      "id": 2
+    }
+  ]
+}

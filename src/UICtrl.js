@@ -1,6 +1,4 @@
-import ItemCtrl from './ItemCtrl.js';
-
-const UICtrl = (function (ItemCtrl) {
+const UICtrl = (function () {
   const UISelectors = {
     name: '#item-name',
     calories: '#item-calories',
@@ -56,8 +54,7 @@ const UICtrl = (function (ItemCtrl) {
       itemList.innerHTML += html;
     },
 
-    showItemToEdit: function () {
-      const item = ItemCtrl.getCurrentItem();
+    showItemToEdit: function (item) {
       document.querySelector(UISelectors.name).value = item.name;
       document.querySelector(UISelectors.calories).value = item.calories;
     },
@@ -115,6 +112,6 @@ const UICtrl = (function (ItemCtrl) {
       }
     },
   };
-})(ItemCtrl);
+})();
 
 export default UICtrl;
