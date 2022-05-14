@@ -1,13 +1,13 @@
 const StorageCtrl = (function () {
   return {
     getItems: async function () {
-      const response = await fetch('http://localhost:3000/items');
+      const response = await fetch('http://localhost:3004/items');
       const items = await response.json();
       return items;
     },
 
     addItem: async function (item) {
-      const response = await fetch('http://localhost:3000/items', {
+      const response = await fetch('http://localhost:3004/items', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ const StorageCtrl = (function () {
 
     updateItem: async function (updatedItem) {
       const response = await fetch(
-        `http://localhost:3000/items/${updatedItem.id}`,
+        `http://localhost:3004/items/${updatedItem.id}`,
         {
           method: 'PUT',
           headers: {
@@ -36,7 +36,7 @@ const StorageCtrl = (function () {
     },
 
     deleteItem: async function (id) {
-      await fetch(`http://localhost:3000/items/${id}`, {
+      await fetch(`http://localhost:3004/items/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

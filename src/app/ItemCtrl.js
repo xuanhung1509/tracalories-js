@@ -1,4 +1,4 @@
-import StorageCtrl from './StorageCtrl.js';
+import StorageCtrl from './StorageCtrl';
 
 const ItemCtrl = (function (StorageCtrl) {
   const data = {

@@ -1,6 +1,6 @@
-import ItemCtrl from './ItemCtrl.js';
-import UICtrl from './UICtrl.js';
-import StorageCtrl from './StorageCtrl.js';
+import ItemCtrl from './ItemCtrl';
+import UICtrl from './UICtrl';
+import StorageCtrl from './StorageCtrl';
 
 const App = (function (ItemCtrl, UICtrl, StorageCtrl) {
   const loadEventListeners = () => {
